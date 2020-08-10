@@ -1,24 +1,15 @@
-import React, { useState } from 'react';
-import { createGlobalStyle } from 'styled-components';
-import { generate as id } from 'shortid';
-
-const GlobalStyle = createGlobalStyle`
-  *{
-    font-family: Helvetica, Arial , sans-serif
-  }
-
-  body{
-      padding: 60px;
-      background-color: #000;
-      color: #fff;
-  }
-`;
+import React from 'react';
+import ListOfGifs from './components/ListOfGifs';
+import './GifApp.css';
+import { Link, Route } from 'wouter';
 
 const GifExpertApp = () => {
   return (
-    <>
-      <GlobalStyle />
-    </>
+    <section className="App-Content">
+      <Link to="/gif/panda">Panda</Link>
+      <Link to="/gif/Programming">Programming</Link>
+      <Route component={ListOfGifs} path="/gif/:keyword" />
+    </section>
   );
 };
 

@@ -1,0 +1,18 @@
+* {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+body {
+  padding: 60px;
+  background-color: #000;
+  color: #fff;
+}
+a {
+  color: #09f;
+  font-size: 32px;
+}
+
+.App-Content {
+  display: flex;
+  flex-direction: column;
+}
