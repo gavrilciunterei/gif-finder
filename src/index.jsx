@@ -1,5 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import GifApp from './GifApp';
+import App from './App';
 
-ReactDOM.render(<GifApp />, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'));
